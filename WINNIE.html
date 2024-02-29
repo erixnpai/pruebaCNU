@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSAYOS Y ARTÍCULOS - WINNIE</title>
+    <style>
+        body {
+            margin: 15px;
+        }
+
+        #datos_revista {
+            text-align: right;
+            line-height: 13px;
+            font-size: 15px;
+            font-family: "Courier Prime", serif;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #columnas_autores {
+            text-align: right;
+            font-family: "Courier Prime", serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        #titulos {
+            text-align: center;
+            font-family: "Courier Prime", serif;
+            color: #009fe3;
+        }
+
+        #datos_autor {
+            text-align: left;
+            line-height: 13px;
+            font-size: 15px;
+            font-family: "Courier Prime", serif;
+        }
+
+        #resumen {
+            font-family: "Courier Prime", serif;
+        }
+
+        .titulo_parrafo {
+            text-align: left;
+            color: #009fe3;
+            font-weight: bold;
+        }
+
+        .parrafo {
+            text-align: justify;
+        }
+
+        .linea {
+            border-width: 2px;
+            border-color: #009fe3;
+        }
+
+        #resumen {
+            background-color: rgb(216, 242, 250);
+            padding: 10px;
+            border-radius: 11px 11px 11px 11px;
+        }
+
+        .text-bold {
+            font-weight: bold;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .text-cursiva {
+            font-style: italic;
+        }
+
+        .container-img {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item-img {
+            flex: 1 1 33.33%;
+            /* Establece un tamaño de 33.33% para cada elemento en pantallas grandes */
+            margin: 10px;
+        }
+
+        .chart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            /* Ancho personalizado */
+            height: 300px;
+            /* Alto personalizado */
+        }
+
+        .chart-container-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            /* Ancho personalizado */
+            height: 600px;
+            /* Alto personalizado */
+        }
+
+        .chart-container-bar-small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            /* Ancho personalizado */
+            height: 400px;
+            /* Alto personalizado */
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            .tabla,
+            .tabla2 {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .chart-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                /* Ancho personalizado */
+                height: 200px;
+                /* Alto personalizado */
+            }
+
+            .chart-container-bar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                /* Ancho personalizado */
+                height: 400px;
+                /* Alto personalizado */
+            }
+
+            .chart-container-bar-small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            /* Ancho personalizado */
+            height: 200px;
+            /* Alto personalizado */
+            font-size: 8px !important;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="datos_revista">
+        <div><img src="cc.png"></div>
+        <div>
+            <p>Índice. Año 3, núm. 5, enero-junio 2023</p>
+            <p>ISSN: 2789-567X</p>
+            <p>e- ISSN: 27903435</p>
+            <p>Fecha de recepción: 1 de marzo de 2023</p>
+            <p>Fecha de aceptación: 16 de mayo de 2023</p>
+            <p>Artículo original arbitrado por pares ciegos</p>
+        </div>
+    </div>
+
+    <div id="titulos">
+        <h1>Valoración de habilidades básicas en lectura y matemática: el caso de Estelí</h1>
+        <h2>Assessment of basic skills in reading and mathematics: the case of Estelí</h2>
+    </div>
+    <br>
+
+    <div id="datos_autor">
+
+        <div class="container-img">
+            <div class="item-img">
+                <ul><span><img src="pencil.png"></span> MSc. Winnie Narváez Herrera</ul>
+                <ul>Fundación Pedagógica Cooperación Genuina</ul>
+                <ul>FUPECG</ul>
+                <ul>narvaezherrera@gmail.com</ul>
+                <ul><a href="https://orcid.org/0000-0002-7606-9376"
+                        target="_blank">https://orcid.org/0000-0002-7606-9376</a></ul>
+                <ul>Estelí, Nicaragua</ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr class="linea">
+    <br>
+
+    <div id="resumen">
+        <h3 class="titulo_parrafo">Resumen</h3>
+        <p class="parrafo">Las evidencias para valorar el aprendizaje están en auge a escala global, pero permanece
+            pendiente definir el aporte significativo de dicha evidencia a la calidad educativa. Las evaluaciones
+            aportan a la calidad a través de su implementación y análisis cuando se realiza de forma participativa. Este
+            es el caso de las Evaluaciones Dirigidas por Ciudadanos (CLA, por sus siglas en inglés). En este artículo se
+            describe la experiencia de VIdA (Valoraciones Intersubjetivas del Aprender), una evaluación dirigida por
+            ciudadanos diseñada desde una visión de cooperación genuina por la Fundación Pedagógica Cooperación Genuina
+            (FUPECGÁBACOenRed) que se desarrolla con instrumentos propios. Estos instrumentos poseen entre 12 y 16 ítems
+            y están validados por docentes del Ministerio de Educación y aplicados por estudiantes normalistas. Su
+            objetivo es valorar los aprendizajes básicos en lectura y matemática de niñez entre 7 y 13 años y su posible
+            correlación con factores socioeconómicos. Esta evaluación fue aplicada durante los meses de febrero y marzo
+            de 2023 en 20 barrios y 20 comunidades del municipio de Estelí, Nicaragua. Los territorios fueron
+            seleccionados a través de una muestra proporcional al tamaño de la población. El estudio evidenció que hay
+            una mejora gradual en los aprendizajes a medida que aumenta la edad y el grado. También, reveló una
+            significancia estadística entre los buenos resultados y el acceso a libros escolares, material de lectura
+            extraescolar, internet y televisión. Entre los datos que llaman la atención, se identifica que las niñas
+            obtienen mejores resultados en lectura.</p>
+
+        <p class="parrafo"><span class="titulo_parrafo">Palabras claves: </span>aprendizaje, evaluación de la educación,
+            condiciones de vida, aptitud para la lectura.</p>
+
+        <h3 class="titulo_parrafo">Abstract</h3>
+        <p class="parrafo">The generation of evidence to assess learning is booming on a global scale, but the
+            significant contribution of such evidence to educational quality remains to be defined. Assessments
+            contribute to quality through their implementation and analysis when carried out in a participatory manner.
+            This is the case of CitizenLed Assessments (CLA). This paper describes the experience of VIdA (Valoraciones
+            Intersubjetivas del Aprender, for its Acronym in Spanish), a citizen-led evaluation designed from a vision
+            of Genuine Cooperation by the FUPECG-ÁBACOenRed foundation, which is developed with its own instruments.
+            These instruments have between 12 and 16 items and are validated by teachers from the Ministry of Education
+            and applied by teacher’s school students. Its objective is to assess basic learning in reading and
+            mathematics of children between seven and 13 years, as well as the possible correlation of these results
+            with socioeconomic factors associated with learning. This evaluation was applied during February and March
+            2023 in 20 neighbourhoods and 20 communities in the municipality of Estelí, Nicaragua, selected through a
+            Probability proportional to size sample based on population. The study showed that there is a gradual
+            improvement in learning as age and grade level increase. It also revealed a statistical significance between
+            good results and access to school books, out-of-school reading material, internet and television. Among the
+            data that stand out is the fact that girls obtain better results in reading.</p>
+
+        <p class="parrafo"><span class="titulo_parrafo">Keywords: </span>Learning, education assessment, living
+            conditions, reading ability, skills.</p>
+    </div>
+
+    <div>
+        <h3 class="titulo_parrafo">Introducción</h3>
+        <p class="parrafo">Al comprometerse con el cumplimiento
+            de los Objetivos de Desarrollo Sostenible,
+            los países asumieron un concepto
+            de calidad de aprendizaje, referido a
+            infraestructura o condiciones en general,
+            formación docente y los resultados de
+            los aprendizajes alcanzados por los
+            estudiantes (UNESCO, 2020). Este último
+            aspecto ha derivado en un alto interés
+            por la generación de evidencias y el
+            desarrollo de monitoreo a través de la
+            evaluación de los aprendizajes (UNESCO,
+            2023). Aunque el largo debate acerca
+            del aprovechamiento de la evidencia
+            continúa vigente (OECD, 2007).</p>
+
+        <p class="parrafo">Existen múltiples sistemas para evaluar
+            los aprendizajes. La mayoría se realiza en
+            el aula, a excepción de las evaluaciones
+            dirigidas por ciudadanos, que se realizan
+            casa a casa. Esta forma de evaluación
+            surgió en el año 2005 en la India y desde
+            entonces se ha implementado en varios
+            países, muchos de ellos a través de
+            la Red de Acciones Ciudadanas por el
+            Aprendizaje (PAL Network, por sus siglas
+            en inglés), con sede en Nairobi (PAL
+            Network, 2023). Como parte de esa red,
+            ÁBACOenRed y la Fundación Pedagógica
+            Cooperación Genuina (FUPECG) de Estelí,
+            Nicaragua, inició a pilotear un tipo de
+            Evaluación Dirigida por Ciudadanos en
+            2017, llamada VIdA. Esta experiencia
+            continuó desarrollándose los años
+            posteriores.</p>
+
+        <p class="parrafo">Este artículo presenta los resultados de
+            una implementación de VIdA, realizada
+            entre febrero y marzo del año 2023 en
+            el municipio de Estelí, en el contexto de
+            un proyecto desarrollado con el apoyo
+            de KIX-LAC, llamado <b>Fortaleciendo
+                habilidades en el aprender</b>. El proyecto
+            se realizó en coordinación con el Ministerio de Educación y autoridades
+            del municipio de Estelí. El objetivo fue
+            valorar los aprendizajes alcanzados en
+            las áreas de lectura y matemática y la
+            posible correlación de los resultados
+            con factores socioeconómicos asociados
+            como sexo, acompañamiento familiar y
+            condiciones del hogar.</p>
+
+        <p class="parrafo">El artículo está estructurado en cuatro
+            secciones. En la primera se describen los
+            referentes y enfoques teóricos utilizados
+            para desarrollar la metodología y filosofía
+            del proyecto. La segunda detalla el método
+            para la implementación del proyecto; es
+            decir, la técnica para la construcción de
+            la muestra, el diseño de instrumentos,
+            la coordinación entre actores, así como
+            la aplicación de los instrumentos y el
+            análisis. En la tercera sección se discuten
+            los resultados del proyecto y en la última
+            se sugieren algunas conclusiones.</p>
+
+        <p class="parrafo text-bold">Referentes y enfoques teóricos</p>
+
+        <p class="parrafo">VIdA es una sigla y es el nombre del
+            sistema de evaluación que desarrolla
+            ÁBACOenRed/FUPECG en Nicaragua,
+            significa “Valoraciones Intersubjetivas del
+            Aprender”. Mientras que una evaluación
+            estandarizada de aprendizajes indica
+            datos cuantitativos, interpretados por un
+            equipo de “expertos/as” externos a los
+            contextos, la valoración intersubjetiva
+            busca comprender la situación del
+            aprendizaje a través de la interpretación
+            que ofrecen diversas personas
+            involucradas directamente en el contexto.
+            VIdA tiene en esencia elementos de dos
+            enfoques: Evaluaciones Dirigidas por
+            Ciudadanos y una visión de Cooperación
+            Genuina. </p>
+
+        <p class="parrafo text-bold">Evaluaciones dirigidas por ciudadanos</p>
+
+        <p class="parrafo">Las Evaluaciones Dirigidas por
+            Ciudadanos surgen en el año 2005 en
+            la India por la organización ASER (Anual
+            Status of Education Report, por sus
+            siglas en inglés). Estas evaluaciones son
+            aplicadas casa a casa y no en la escuela,
+            para garantizar la participación de la
+            niñez no matriculada, el involucramiento
+            de la familia y la identificación de
+            posibles factores asociados a los
+            resultados. Otra característica propia de
+            estas evaluaciones es que los ejercicios
+            se realizan cara a cara con el niño o la
+            niña en su ambiente habitual y no en
+            la escuela, donde posiblemente los
+            preparan previamente. De acuerdo con
+            Hevia y Vergara Lope (2020, p. 4), estas
+            evaluaciones “se pueden agrupar en la
+            categoría de evaluaciones alternativas”,
+            entre las que están también las
+            evaluaciones dirigidas por los/as
+            maestros/as (teacher-led-assessment),
+            las evaluaciones alternas originadas
+            para personas con discapacidad y las
+            evaluaciones de rendimiento.
+        </p>
+
+        <p class="parrafo">Estos autores plantean que “el tipo de
+            información que se genera enfatiza la
+            gravedad del problema, centrándose en
+            los aprendizajes fundamentales, más
+            que en los esperados según los currículos
+            escolares o edad y su extensión” (Hevia y
+            Vergara Lope, 2020, p. 8). </p>
+
+        <p class="parrafo">El modelo pedagógico que usa esta
+            perspectiva se denomina “Enseñar
+            en el nivel correcto” (Teaching at the
+            Right Level
+            1
+            ). El principio pedagógico
+            central es básico y se pueden formar a
+            los estudiantes de acuerno a los niveles
+            alzanzados (Banerjee et al.,2016). En
+            el caso de la experiencia de VIdA en
+            Nicaragua y respetando el enfoque hacia
+            el aprender, la perspectiva fue adaptada
+            a Aprender al Nivel Adecuado (AaNA). </p>
+
+        <p class="parrafo text-bold">Cooperación genuina</p>
+
+        <p class="parrafo">La Visión Vital_Esencial de Cooperación
+            Genuina es desarrollada por
+            ÁBACOenRed/FUPECG y todas las
+            personas con quienes se tiene interacción.
+            Se trata de un sistema integrado de
+            una visión (horizonte), ambientes,
+            pilares, ejes y procesos, que aporta a
+            la construcción colectiva de escenarios
+            educativos propios, construyendo y
+            fortaleciendo actitudes cooperativas y
+            confianza en y entre actores/as y autoras/
+            es de Nuestramérica. La visión enfatiza
+            en los procesos de (re)significación
+            desde las propias experiencias de cada
+            ser, en su dimensión EcoPerSocial
+            (territorio, persona y entorno social) de
+            sus prácticas actuales, confrontándolas,
+            analizándolas, comprendiéndolas para
+            poder transformarlas.
+        </p>
+
+        <p class="parrafo">En el contexto de un sistema de valoración
+            de aprendizajes, la Cooperación Genuina
+            orienta la lógica organizativa del proceso
+            que entre sus pilares implica el arte de
+            escucharnos, entre quienes diseñan,
+            implementan y dan significado a los
+            resultados, la maestría de preguntarnos
+            que también es esencial en el proceso
+            de escucha y conocimiento del contexto,
+            también desde la posición política de
+            reconocer a líderes y lideresas como
+            expertos/as del territorio. </p>
+
+        <p class="parrafo">A estos pilares se suman la integración y el
+            disfrute, que indudablemente aumentan
+            el compromiso cuando la participación
+            es activa y real, cuando todas las
+            personas son escuchadas y cuando las
+            responsabilidades son compartidas y no
+            solamente distribuidas. </p>
+
+        <p class="parrafo text-bold">Investigación acción participativa</p>
+
+        <p class="parrafo">A pesar de que existen diversos tipos
+            de Investigación Acción, en este artículo se hace referencia a la Participativa
+            (IAP), específicamente en el contexto
+            Nuestroamericano. Se basa en la
+            comprensión colectiva y profunda de una
+            situación para poder transformarla (Paz
+            Sandín, 2003). Respecto a la aplicación
+            de la IAP podemos caracterizar a VIdA
+            como tal, ya que implica definir, investigar
+            y aportar insumos para la comprensión
+            profunda del contexto de aprendizaje a
+            nivel comunitario.</p>
+
+        <p class="parrafo">El proceso de investigación colectiva
+            y el novedoso interés que reciben los
+            aprendizajes básicos en la comunidad se
+            ven reflejados en la fase de evaluación
+            descrita en este documento, como
+            en la segunda fase del proyecto, no
+            profundizada en este artículo, que se
+            refiere a acciones para superar las
+            dificultades identificadas en la niñez.
+            Esta segunda fase trata del desarrollo
+            de sesiones de trabajo, facilitado por
+            estudiantes de la Escuela Normal, con
+            metodologías didácticas participativas
+            innovadoras para el aprendizaje de las
+            matemáticas.</p>
+
+        <p class="parrafo">Es válido mencionar que la coordinación
+            efectiva durante la fase de evaluación
+            o primera fase permitió un importante
+            involucramiento de las familias en la
+            segunda fase. Además, se observó
+            la relevancia que tiene para la niñez
+            compartir espacios seguros, entre pares,
+            en pequeños grupos, con atención
+            directa y realimentando su proceso de
+            forma colectiva.</p>
+
+        <p class="parrafo">Estos espacios son también una forma
+            de investigación porque brindan datos
+            importantes sobre las necesidades
+            particulares de cada niño/a, tanto en el
+            momento de responder a las actividades
+            propuestas como al compartir acerca de
+            sus problemáticas o alegrías de la vida
+            cotidiana.</p>
+
+        <p class="parrafo text-bold">Materiales y métodos</p>
+
+        <p class="parrafo">Durante los fines de semana del 25 al
+            26 de febrero y del 11 al 12 de marzo
+            2023 se realizaron visitas a hogares
+            del municipio de Estelí para realizar
+            ejercicios que valoran las habilidades
+            básicas en lectura, matemática con niñez
+            de siete a 13 años de edad y entrevistas
+            con personas adultas a cargo de la niñez.
+            En este proceso participaron estudiantes
+            de la Escuela Normal de Estelí como
+            encuestadores voluntarios, distribuidos
+            de la siguiente manera: 53 normalistas
+            en los barrios y 32 en comunidades.
+            También, participaron cinco técnicos y
+            40 líderes comunitarios. Se logró trabajar
+            con 846 niñas y niños, un promedio de
+            21 por comunidad y barrio. En todas
+            las comunidades y todos los barrios se
+            trabajó con un promedio de entre 14 y 27
+            niñas y niños.
+        </p>
+
+        <p class="parrafo">Con ayuda de líderes y lideresas
+            comunitarios se identificaron cuatro rutas
+            en el área urbana y ocho en el área rural
+            en dependencia de la ubicación. En total
+            se visitaron 20 barrios y 20 comunidades.
+            A su vez, se visitaron 760 hogares,
+            seleccionados según el procedimiento
+            de “cada tanta casa” o la regla de 2,
+            3, 4 o 5 casas, en dependencia de la
+            cantidad total de viviendas por área, con
+            un promedio de 19 casas por comunidad
+            y barrio. La meta era 20, lo que no se
+            pudo cumplir principalmente por haber
+            comunidades con relativamente pocas
+            casas, aún menos abiertas y con niñez
+            presente de esta edad. </p>
+
+        <p class="parrafo">Para realizar la selección de la muestra
+            se aplicó la técnica de Probabilidad
+            Proporcional al Tamaño (PPT). Esta
+            consiste en identificar el listado completo
+            de barrios y/o comunidades con sus
+            respectivos tamaños (cantidad de hogares en nuestro caso, cantidad de
+            habitantes) y luego el tamaño de la
+            muestra establecida. A continuación,
+            se calculó el intervalo de muestreo,
+            dividiendo el número de habitantes entre
+            el tamaño de la muestra o número de
+            barrios a visitar. Además, se generó un
+            número aleatorio (con Excel). Una vez
+            calculado el intervalo de muestreo, este
+            se multiplicó con el número aleatorio.
+            Con base en el resultado se buscó la
+            primera comunidad o barrio cuyo número
+            de habitantes implicaba a ese resultado.</p>
+
+        <p class="parrafo">Para la siguiente comunidad o barrio se
+            sumó el número anterior más el intervalo
+            de la muestra y así sucesivamente hasta
+            finalizar el listado, trabajando con el
+            tamaño acumulativo de comunidades y
+            barrios. Se optó por utilizar esta técnica
+            porque si se hubieran seleccionado al
+            azar sin tomar en cuenta el tamaño
+            de las comunidades o barrios, no
+            todos los hogares tendrían la misma
+            oportunidad de ser elegidos. Finalmente,
+            se realizó una revisión con líderes, con
+            base en los criterios de accesibilidad
+            y seguridad. Además, se escogió diez
+            barrios y diez comunidades extra que
+            podrían ser utilizados para sustituir
+            alguno de los primeros 40, en caso de
+            que la accesibilidad o el contexto de
+            seguridad no permitieran las visitas; sin
+            embargo, esto no fue necesario en esta
+            investigación.</p>
+
+        <p class="parrafo">Los instrumentos utilizados fueron
+            elaborados por ÁBACOenRed/FUPECG
+            con base en el marco de referencia
+            global para el aprendizaje matemático de
+            la UNESCO (2019), los instrumentos de
+            Medición Independiente (MIA, México),
+            los instrumentos previos de VIdA 2017
+            y los libros de texto de Nicaragua, para
+            contrastar con los grados que cursa la niñez a la que se aplicaría. Además,
+            fueron validados por docentes del
+            Ministerio de Educación. Se trata de
+            instrumentos que contienen ítems
+            organizados de menor a mayor dificultad
+            para aplicar un mismo ítem a todas
+            las edades sin generar presión, más
+            bien, logrando que la niñez participante
+            decida hasta donde responderlo. Estos
+            se aplicaron por igual a toda la muestra
+            y representan el contenido básico global
+            de lectura y matemática. De esta forma
+            se garantiza un instrumento robusto que
+            reduce riesgos de validez y confiabilidad
+            como la improvisación (Hernández
+            Sampieri, 2014, p. 205).</p>
+
+        <p class="parrafo">Se aplicó una encuesta a través de un
+            cuestionario único sobre las condiciones
+            de comunidad/barrio y hogar con las
+            variables de nivel de vida (condiciones
+            básicas y socioeconómicas) y otras
+            variables educativas seleccionadas por
+            el contexto, como grado de escolaridad
+            de personas adultas, acompañamiento
+            a la niñez matriculada, disposición
+            de materiales escolares y accesos
+            tecnológicos. Todo esto para saber
+            si existe alguna correlación entre
+            los resultados en habilidades y las
+            condiciones sociales y materiales.</p>
+
+        <p class="parrafo">Para el análisis de resultados se elaboró
+            una base de datos en SPSS. Esta se
+            realizó de forma automática con los
+            datos de comunidad/barrio, hogares,
+            familia y niñez. Los datos se recogieron
+            en una aplicación digital creada para
+            este proyecto e instalada en tabletas. A
+            esta base de datos se agregó de forma
+            manual nuevas variables, los resultados
+            obtenidos por cada niño/a en los ejercicios
+            de matemática y lectura. El resultado
+            obtenido se refiere al último ítem que
+            logró realizar el niño o la niña (no se trató de una nota). En el caso de lectura eran
+            12 ítems, en el caso de matemática, 16.
+            Posteriormente, realizamos cruces para
+            identificar correlaciones y su significancia
+            estadística correspondiente.</p>
+
+        <p class="parrafo">En nuestra metodología de trabajo
+            ponemos especial atención en la
+            diferencia entre lectura de datos y
+            su análisis. Tal y como el nombre del
+            sistema de evaluación lo dice “valoración
+            intersubjetiva”, esto implica una
+            diversidad de significados brindada por
+            una representación de actores cercanos
+            al contexto en cuestión. En este artículo
+            describimos y leemos los resultados,
+            considerando algunas significaciones
+            brindadas por autoridades del Ministerio
+            de Educación cuando compartimos
+            estos resultados. Reconocemos que su
+            profundización debe continuar sobre
+            todo en relación a las habilidades de la
+            niñez respecto a los factores asociados a
+            sus resultados.</p>
+
+        <p class="parrafo text-bold">Resultados y discusión</p>
+
+        <p class="parrafo">Tal como se explicó en la sección
+            introductoria de este documento, el
+            objetivo del estudio fue valorar los
+            aprendizajes alcanzados por la niñez
+            y la posible correlación de dichos
+            resultados con factores asociados que
+            se relacionan con las condiciones de la
+            comunidad, la familia y el hogar de la
+            niñez. A continuación, se presentan los
+            resultados descriptivos de la población
+            y de las habilidades de la niñez para
+            posteriormente analizar los factores
+            asociados.</p>
+
+        <p class="parrafo">En primer lugar, se muestran algunos
+            criterios o indicadores que nos permiten
+            confirmar la calidad de la investigación.
+            Por ejemplo, al tratarse de una muestra
+            representativa de niñez entre siete y 13 años, seleccionada con base en
+            el número de habitantes por barrio y
+            comunidad, se esperaba una población
+            representativa de ambos sexos, lo que se
+            confirma en la Figura 1.</p>
+
+        <p class="parrafo text-center"><b>Figura 1</b><br> Cantidad de niñez valorada segun sexo</p>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <p class="parrafo text-center">Nota. En la figura se muestran la cantidad de niñez según el sexo. Fuente: Elaboración propia.</p>
+
+
+        <p class="parrafo">En la Figura 2 es posible constatar que
+            las edades consideradas coinciden con el
+            grado que se esperaría que la niñez esté
+            cursando. Es relevante remarcar que para
+            este criterio no basta haber definido un
+            rango de edad, sino que la aleatoriedad
+            en la selección de viviendas permitió
+            encontrar una cantidad equitativa de
+            niñez al momento de visitar las casas,
+            considerando la cantidad de hogares que
+            usualmente pueden estar cerradas o las
+            actividades que las familias desarrollan
+            durante los fines de semana.</p>
+
+        <p class="parrafo">En cuanto a los datos generales, del total
+            de hogares visitados en el 66.3 % habita
+            solamente un(a) niño(a) entre siete a 13
+            años y en el 10.2 % habitan más de 2. Este
+            dato es también relevante considerando
+            que el estudio incluye familias del área
+            rural que usualmente son numerosas; sin
+            embargo, la mayoría de los habitantes
+            no está entre ese rango de edad. En
+            muchos casos se encontró niñez menor.
+            La encuesta también evidenció que en un 76 % de las viviendas hay al menos
+            una persona con secundaria aprobada.
+            Gracias a la metodología de visitar
+            casa a casa, era posible conversar con
+            diversos miembros de la familia que
+            se encontraban en ese momento y fue
+            interesante aprender que en muchos
+            casos la niñez matriculada es la primera
+            generación que asiste a la escuela.</p>
+
+        <p class="parrafo text-center"><b>Figura 2</b><br> Grado cursado por la niñez evaluada</p>
+        <div class="chart-container-bar">
+            <canvas class="chart-pc" id="myChartBar1"></canvas>
+        </div>
+        <p class="parrafo text-center">Nota. En la figura se muestran los datos de los grados cursados por la niñez. Fuente: Elaboración
+            propia.</p>
+
+        <p class="parrafo">Hemos decidido integrar las condiciones
+            de la vivienda y la estructura familiar
+            en este estudio porque son insumos
+            importantes para analizar el desarrollo
+            de habilidades en niños y niñas. Así lo destaca UNESCO (2021) respecto al
+            informe ERCE 2019:</p>
+            
+        <p class="parrafo text-center"><b>Figura 3</b><br> Condiciones de los hogares visitados</p>
+            <div class="chart-container-bar">
+                <canvas id="myChartBar2"></canvas>
+            </div>
+            <p class="parrafo text-center">Nota. La figura muestra las condiciones de las viviendas visitadas. Fuente: Elaboración
+                propia.</p>
+
+        <p class="parrafo">La evidencia del estudio de factores
+            asociados señala algunas pistas para
+            orientar el rumbo. En primer lugar, se
+            destaca la importancia crucial de la
+            mejora de las condiciones de vida de la
+            población como primer factor que influye
+            en los aprendizajes. (p. 106)</p>
+
+            <p class="parrafo">La Figura 4 muestra que, aunque el
+                fenómeno de la migración se considera
+                significativo en el municipio, se identificó
+                que la mitad de la niñez evaluada habita
+                con mamá y papá y el 84 % habita al
+                menos con mamá.</p>
+            
+            <p class="parrafo text-center"><b>Figura 4</b><br> Personas adultas a cargo de la niñez
+                evaluada</p>
+                <div class="chart-container-bar-small">
+                    <canvas id="myChartBar3"></canvas>
+                </div>
+                <p class="parrafo text-center">Nota. El gráfico muestra los datos de las
+                    personas adultas a cargo de la niñez. Fuente: Elaboración
+                    propia.</p>
+
+        <p class="parrafo">De acuerdo con los planes de desarrollo humano a partir de 2008 y el Plan
+            Nacional de Lucha contra la Pobreza y
+            para el Desarrollo Humano (2022-2026),
+            el acceso a la educación en Nicaragua
+            es una prioridad. En este proyecto se
+            identificó que la mayoría de la niñez
+            evaluada en el municipio de Estelí está
+            matriculada. Además, se identificaron
+            algunos casos aislados de niñez extra
+            edad que cursan la escuela. Esto significa
+            que, además de garantizar el acceso en
+            edad regular, se continúa fortaleciendo
+            la educación de jóvenes y adultos en
+            todas sus modalidades y la inclusión
+            en el sistema educativo en el sistema
+            educativo.</p>
+
+            <p class="parrafo text-center"><b>Figura 5</b><br> Cantidad de niñez evaluada que está
+                matriculada</p>
+                <div class="chart-container">
+                    <canvas id="myChartPie2"></canvas>
+                </div>
+                <p class="parrafo text-center">Nota. El gráfico muestra la cantidad
+                    de niñez que está evaluada. Fuente: Elaboración
+                    propia.</p>
+
+        <p class="parrafo">Otro dato relevante que también coincide
+            con lo descrito por UNESCO (2022), es
+            que las niñas tienen mejores resultados
+            en la habilidad de lectura. Esto, lejos de
+            plantearlo como una competencia entre
+            mejores y peores, nos genera preguntas
+            respecto a las posibles causas.</p>
+
+        <p class="parrafo text-center"><b>Figura 6</b><br> Habilidad de lectura según sexo de la
+            niñez evaluada</p>
+                <div class="chart-container">
+                    <canvas id="myChartBar4"></canvas>
+                </div>
+                <p class="parrafo text-center">Nota. La figura expone las habilidades de
+                    lectura según el sexo. Fuente: Elaboración
+                    propia.</p>
+
+    </div>
+
+    <div>
+        <h3 class="titulo_parrafo">Conclusiones</h3>
+
+
+    </div>
+
+    <div>
+        <h3 class="titulo_parrafo">Listado de referencias</h3>
+
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+<script>
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+        plugins: [ChartDataLabels],
+        options: {
+            plugins: {
+                datalabels: {
+                    color: '#000000',
+                    font: {
+                        weight: 'bold',
+                        size: '15px',
+                    },
+                    formatter: function (value, context) {
+                        if (context.dataIndex === 0) {
+                            return 'Hombres\n' + value + ' % ';
+                        } else {
+                            return 'Mujeres\n' + value + ' % ';
+                        }
+                    }
+                }
+            }
+        },
+        type: 'pie',
+        data: {
+            //labels: ['Hombres', 'Mujeres'],
+            datasets: [{
+                borderColor: ['#3871C1', '#50ADE4'],
+                backgroundColor: ['#3871C1', '#50ADE4'],
+                data: [48.9, 51.1],
+                borderWidth: 1
+            }]
+        },
+    });
+
+    // Obtener una referencia al elemento canvas del DOM
+    const $barchar1 = document.querySelector("#myChartBar1");
+    // Las etiquetas son las que van en el eje X. 
+    const etiquetas = ["1Ro", "2Do", "3Ro", "4To", "5To", "6To", "7Mo", "8Vo", "9No"]
+    // Podemos tener varios conjuntos de datos
+    const datos1Ro = {
+        label: "78",
+        data: [21.8, 71.1, 7, 3.4, 0, 0, 0, 0, 0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+        backgroundColor: '#009fe3', // Color de fondo
+        borderColor: '#009fe3', // Color del borde
+        borderWidth: 1,// Ancho del borde
+    };
+    const datos2Do = {
+        label: " ",
+        data: [1.4, 16.9, 78.4, 3.4, 0, 0, 0, 0, 0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+        backgroundColor: '#72CEB9',// Color de fondo
+        borderColor: '#72CEB9',// Color del borde
+        borderWidth: 1,// Ancho del borde
+    };
+    const datos3Ro = {
+        label: "91",
+        data: [0, 5, 23.6, 68.6, 2.9, 0, 0, 0, 0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+        backgroundColor: '#5D7AAC', // Color de fondo
+        borderColor: '#5D7AAC', // Color del borde
+        borderWidth: 1,// Ancho del borde
+    };
+    const datos4To = {
+        label: "1",
+        data: [0.8, 0.8, 3.8, 23.6, 17.3, 67.7, 9.8, 0, 0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+        backgroundColor: '#4573C2',// Color de fondo
+        borderColor: '#4573C2',// Color del borde
+        borderWidth: 1,// Ancho del borde
+    };
+    const datos5To = {
+        label: "11",
+        data: [0, 0, 5.6, 6.5, 16.9, 60.5, 10.5, 0, 0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+        backgroundColor: '#41B5CA', // Color de fondo
+        borderColor: '#41B5CA', // Color del borde
+        borderWidth: 1,// Ancho del borde
+    };
+    const datos6To = {
+        label: "21",
+        data: [0, 1.2, 3.6, 2.4, 4.8, 13.1, 65.5, 9.5, 0], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+        backgroundColor: '#657CA8',// Color de fondo
+        borderColor: '#657CA8',// Color del borde
+        borderWidth: 1,// Ancho del borde
+    };
+    const datos7Mo = {
+        label: "3",
+        data: [0, 1.7, 1.7, 1.7, 3.4, 19, 17.2, 44.8, 10.3], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+        backgroundColor: '#2F3B78', // Color de fondo
+        borderColor: '#2F3B78', // Color del borde
+        borderWidth: 1,// Ancho del borde
+    };
+
+    new Chart($barchar1, {
+        type: 'bar',// Tipo de gráfica
+        data: {
+            labels: etiquetas,
+            datasets: [
+                datos1Ro,
+                datos2Do,
+                datos3Ro,
+                datos4To,
+                datos5To,
+                datos6To,
+                datos7Mo,
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }],
+            },
+        },
+        plugins: [ChartDataLabels],
+        options: {
+            plugins: {
+                datalabels: {
+                    color: '#000000',
+                    font: function (context) {
+                        var avgSize = Math.round((context.chart.height + context.chart.width) / 2);
+                        var size = Math.round(avgSize / 45);
+                        size = size > 12 ? 12 : size; // establece un límite máximo de tamaño de fuente
+                        return {
+                            size: size,
+                            weight: 'bold'
+                        };
+    },
+                    rotation: -90, // Rotación de las etiquetas (90 grados)
+                    anchor: 'end', // Punto de anclaje de las etiquetas (al principio)
+                    align: 'end', // Alineación de las etiquetas (arriba)
+                    offset: 4,
+                    formatter: function (value, context) {
+                        return value !== 0 ? value + ' %' : '';
+                    }
+                }
+            }
+        }
+    });
+
+const $barchar2 = document.querySelector("#myChartBar2");
+const datos = ['Inodoro o letrina', 'Acceso a agua potable', 'Conexión a energía eléctrica', 'Celular', 'Paredes en buen estado', 'Techo en buen estado', 'Televisión', 'Radio', 'Internet', 'Computadora'];
+
+const datosBarHor = {
+    data: [98, 94, 96, 91, 90, 90, 85, 71, 33, 32],
+    backgroundColor: [
+        '#5A9AD9'
+    ],
+    borderWidth: 1, // Ancho del borde
+};
+
+new Chart($barchar2, {
+    type: 'bar',
+    data: {
+        labels: datos,
+        datasets: [
+            datosBarHor
+        ]
+    },
+    plugins: [ChartDataLabels],
+    options: {
+        indexAxis: 'y',
+        plugins: {
+            legend: {
+                display: false // Ocultar la leyenda
+            },
+            datalabels: {
+                align: 'center', // Centra los datos dentro de las barras
+                anchor: 'end', // Ancla los datos en el centro de las barras
+                color: '#000000', // Color de los datos
+                font: {
+                        weight: 'bold',
+                        size: '11px',
+                    },
+                offset: 4,
+                formatter: function (value, context) {
+                    if (context.dataIndex === 0) {
+                            return value + ' % ';
+                        } else {
+                            return value + ' % ';
+                        }
+                }
+            }
+        }
+    }
+});
+
+const $barchar3 = document.querySelector("#myChartBar3");
+const datos2 = ['Otra persona', 'Otro familiar (mujer)', 'Papá', 'Mamá', 'Papa y mamá'];
+
+const datosBarHor2 = {
+    data: [4, 8, 3, 34, 50],
+    backgroundColor: [
+        '#5A9AD9'
+    ],
+    borderWidth: 1, // Ancho del borde
+};
+
+new Chart($barchar3, {
+    type: 'bar',
+    data: {
+        labels: datos2,
+        datasets: [
+            datosBarHor2
+        ]
+    },
+    plugins: [ChartDataLabels],
+    options: {
+        indexAxis: 'y',
+        plugins: {
+            legend: {
+                display: false // Ocultar la leyenda
+            },
+            datalabels: {
+                align: 'center', // Centra los datos dentro de las barras
+                anchor: 'end', // Ancla los datos en el centro de las barras
+                color: '#000000', // Color de los datos
+                font: {
+                        weight: 'bold',
+                        size: '11px',
+                    },
+                offset: 4,
+                formatter: function (value, context) {
+                    if (context.dataIndex === 0) {
+                            return value + ' % ';
+                        } else {
+                            return value + ' % ';
+                        }
+                }
+            }
+        }
+    }
+});
+
+const ctx2 = document.getElementById('myChartPie2');
+    new Chart(ctx2, {
+        plugins: [ChartDataLabels],
+        options: {
+            plugins: {
+                datalabels: {
+                    color: '#000000',
+                    font: {
+                        weight: 'bold',
+                        size: '15px',
+                    },
+                    formatter: function (value, context) {
+                        if (context.dataIndex === 0) {
+                            return 'No\n' + value + ' % ';
+                        } else {
+                            return 'Si\n' + value + ' % ';
+                        }
+                    }
+                }
+            }
+        },
+        type: 'pie',
+        data: {
+            labels: ['No', 'Si'],
+            datasets: [{
+                borderColor: ['#3871C1', '#50ADE4'],
+                backgroundColor: ['#3871C1', '#50ADE4'],
+                data: [1.9, 98.1],
+                borderWidth: 1
+            }]
+        },
+    });
+
+
+    const $barchar4 = document.querySelector("#myChartBar4");
+    const etiquetas2 = ["Niveles menores de habilidad lectora", "Niveles mayores de habilidad lectora"]
+
+    const datosNMeHL = {
+        label: "Hombres",
+        data: [24.9, 15.9],
+        backgroundColor: '#3871C1',
+        borderColor: '#3871C1',
+        borderWidth: 1,
+    };
+    const datosNMaHL = {
+        label: "Mujeres",
+        data: [75.2, 84.2],
+        backgroundColor: '#50ADE4',
+        borderColor: '#50ADE4',
+        borderWidth: 1,
+    };
+
+    new Chart($barchar4, {
+        type: 'bar',
+        data: {
+            labels: etiquetas2,
+            datasets: [
+                datosNMeHL,
+                datosNMaHL,
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }],
+            },
+        },
+        plugins: [ChartDataLabels],
+        options: {
+            plugins: {
+                legend: {
+                    position: 'top'
+                },
+                datalabels: {
+                    color: '#000000',
+                    font: {
+                        weight: 'bold',
+                        size: '11px',
+                    },
+                    anchor: 'center',
+                    align: 'end',
+                    offset: 4,
+                    formatter: function (value, context) {
+                        return value !== 0 ? value + ' %' : '';
+                    }
+                }
+            }
+        }
+    });
+
+</script>
+
+</html>
